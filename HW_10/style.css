@@ -1,0 +1,119 @@
+body{
+    background: #000;
+    background-image: url(./webbdeepfield.jpg);
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 150px;
+    width: 300px;
+    border-top: solid 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 100px;
+}
+.ball {
+    height: 60px;
+    width: 60px;
+   /* background-color: greenyellow;*/
+border-radius: 50%;
+position: relative;
+transform-origin: top;
+}
+.ball::after{
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 60px;
+    background: linear-gradient(90deg, rgb(177, 173, 250) 0%, rgb(69, 69, 255) 45%, rgba(0,212,255,1) 100%);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 10px 5px#02bff8;
+}
+
+.ball:first-child {
+    animation: swing1 1.2s infinite linear;
+}
+@keyframes swing1 {
+    25%{
+        transform: rotate(50deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.ball:last-child {
+    animation: swing2 1.2s 0.6s infinite linear;
+}
+@keyframes swing2 {
+    25%{
+        transform: rotate(-50deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+/********************/
+.blok{
+    display: block;
+}
+
+.jedi-swords{
+    margin: 100px auto;
+    width: 50%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.jedi-swords>div{
+    margin: 0 auto;
+    width: 100%;
+    height: 25px;
+    background: rgb(103, 107, 107);
+    border: 1px solid #fff;
+    border-radius: 50px;
+    cursor: grab;
+}
+
+.handle{
+    margin-left: 20px;
+    width: 5vw;
+    height: 100%;
+    border: none;
+    background-color: #000;
+}
+.right{
+    margin-left: 88%;
+}
+
+.top-sword, .sword-blue, .sword-red{
+    transition: all 3s ease;
+}
+.jedi-swords:hover .top-sword{
+    box-shadow: 0 0 20px 10px#0bee2a;
+    transform: translateY(50px);
+    opacity: 0;
+    background: #04d820;
+}
+
+.jedi-swords:hover .sword-blue{
+    box-shadow: 0px 0px 20px 10px#3741f7;
+    transform: rotateZ(50deg);
+    background-color: #2939c9;
+}
+
+.jedi-swords:hover .sword-red{
+    transform: translateY(-50px) rotateZ(-50deg);
+    background-color: #ff0000;
+    box-shadow: 0px 0px 20px 10px#fa5050;
+}
