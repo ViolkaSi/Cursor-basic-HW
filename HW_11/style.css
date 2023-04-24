@@ -1,0 +1,320 @@
+
+.home{
+    margin-left: -20px;
+    
+}
+.letter{
+  
+   margin-left: 5px;
+   margin-top: -3px;
+}
+.like{
+    margin-left: 5px;
+}
+.compas{
+    margin-left: 5px
+}
+.info_about_user p{
+    color: #212121;
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+}
+.search{
+    background-image: url(./img/search.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+ul,
+ol {
+  list-style: none;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+.top_line{
+    width: 100vw;
+    margin-left: -110px;
+    margin-top: -10px;
+}
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a{
+
+  text-decoration: none;
+  font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+}
+hr{
+    width: 100%;
+}
+.user_info  p{
+    Width: 531px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+.user_info  a{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+}
+.folo{
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 21px;
+}
+.logo{
+    margin-left: 20px;
+    margin-right: 230px;
+}
+.navigation{
+    margin-left: 200px;
+}
+.user_info .text{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    
+}
+.post-tagged{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    width: 100wh;
+    margin-bottom: 10px;
+}
+.link_posts-img{
+    margin-right: 5px;
+    margin-top: -2px;
+   
+}
+.link_tagged-img {
+    margin-right: 5px; 
+}
+.post-tagged a{
+    font-size: 12px;
+line-height: 15px;
+color: #212121;
+
+}
+.history p{
+    color: #212121;
+    font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+    
+}
+
+.link_posts:hover{
+    border-top: solid 1px #303030;
+    padding-top: 22px;
+    
+}
+.link_tagged:hover{
+    border-top: solid 1px  #303030;
+    padding-top: 22px;
+    
+}
+@media only screen and (max-width: 720px) {
+
+    .logo{
+       margin: 0;
+       margin-right: 30px;
+       margin-left: 30px;
+      
+    }
+    .navigation{
+        margin-left: 0;
+        display: flex;
+    }
+    .img_nav{
+        display: flex;
+    }
+
+    .home{
+        margin-left: 0px;
+        margin-top: 10px;
+       
+    }
+   
+    .letter{
+       margin-left: 8px;
+       margin-top: 5px;
+       margin-right: 40px;
+      
+    }
+    .search {
+       border: #fff;
+        width: 20px;
+        margin-top: -10px;
+      /* margin-left: 100px;
+       margin-right: auto;*/
+       left: 100px;
+       
+    }
+    .like{
+       
+        margin-left: 100px;
+        margin-top: -20px;
+        margin-right: 2px;
+          
+    }
+    .top_line{
+        margin-top: -40px;
+        margin-left: 10px;
+        width: 100%;
+        max-width: 720px;
+        min-width: 500px;
+    }
+    .switch{
+    padding-top: 15px;
+    }
+    .user_info-text{
+        width: 300px;
+        margin-left: -400px;
+    }
+.user_info{
+    margin: 0;
+}
+
+    .user_picture_pos{
+        margin-top: 25%;
+        margin-right: -50px;
+    }
+    .hide{
+        display: none;
+    }
+    .num_post{
+display: block;
+    }
+    .num_followers{
+        display: block;
+    }
+    .num_following{
+        display: block;
+    }
+    .user_info  p{
+        Width: 100%;
+    }
+    .user_info-text{
+        display:block;
+    }
+    .info_about_user{
+        display:block;
+        margin-block-start: -100px;
+         
+       
+    }
+   
+    .link_posts-img{
+        margin-top: -2px;
+        
+    }
+    .link_tagged-img{
+        margin-top: -2px;
+    }
+    .posts{
+        width: 100vw;
+        display: block;
+       
+     
+    }
+    .content{
+        width: 300px;
+        height: 300px;
+      
+    
+    }
+    hr{
+        width: 100vh;
+    }
+}
+
+
+.switch {
+    display: block;
+    float: right;
+    margin-top: -1px;
+    --width-of-sitch: 3.5em;
+    --height-of-sitch: 2em;
+    --size-of-icon: 1.4em;
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-sitch);
+    height: var(--height-of-sitch);
+} 
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    border: solid 1px #212121;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080,#ff8c00,20%);
+    transition: .4s;
+}
+input:checked + .slider{
+    background-color: #303136;
+}
+input:checked +.slider::before{
+    left: calc(100%-(var(--size-of-icon,1.4em)+var(--slider-offset,0.3em)));
+    background: #303136;
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+.dark-mode-theme{
+    background: #777777;
+    color: #e6e6e6;
+}
+.dark-mode-theme  a, li, ul, p {
+    color: #e6e6e6;
+}
+.dark-mode-theme  .num_post, .num_followers, .num_following{
+    color: #e6e6e6;
+}
+.dark-mode-theme .search{
+    background-color: #575757;
+}
+.dark-mode-theme .post-tagged a{
+
+color:  #e6e6e6;
+
+}
+.dark-mode-theme .folo p{
+    color: #e6e6e6;
+}
+.dark-mode-theme .history p{
+    color:  #e6e6e6;
+    
+}
+.dark-mode-theme .info_about_user p{
+    color:  #e6e6e6;
+    
+}
